@@ -1,0 +1,13 @@
+ body{
+    background-image: url('./letter.jpg');
+
+    }
+  .myclass{
+    margin-top: 250;
+    margin-left: 200;
+    margin-right: 200;
+  }
+  .myclass1{
+    margin-left: 200;
+    margin-right: 200;
+  }
