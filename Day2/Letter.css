@@ -1,13 +1,16 @@
  body{
     background-image: url('./letter.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1.5rem;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 250px;
+
+
 
     }
-  .myclass{
-    margin-top: 250;
-    margin-left: 200;
-    margin-right: 200;
-  }
-  .myclass1{
-    margin-left: 200;
-    margin-right: 200;
+
+  .name{
+    font-size: 2rem;
   }
