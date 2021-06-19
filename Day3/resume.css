@@ -1,0 +1,36 @@
+.flex-resume{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+.resume-size{
+    display: flex;
+    flex-direction: row;
+    
+    height: 80%;
+    width: 60%;
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10% 5% 0 0;
+
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+
+}
+.field{
+    width: 50%;
+    transform:translate(50%,0);
+    background-color:rgb(202, 253, 255);
+}
