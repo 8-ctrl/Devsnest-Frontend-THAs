@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+  --gradient: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);
+
+
+);
+}
+@font-face {
+  font-family: 'gamefont';
+  src: url('/brickshapers-font/Brickshapers-eXPx.ttf')  format('truetype');
+}
+.wraper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black  ; 
+    /* background-image: var(--gradient);
+    background-size: 600%;
+    background-position: right;
+    /* transition: background-position 11s; */
+    /* animation: bg-color 5s infinite alternate;  */
+
+}
+/* @keyframes bg-color {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+
+} */
+
+.info{
+    height:10%;
+    width:20%;
+    margin: 0;
+}
+
+.cardholder{
+    margin: 0 20% 0 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    /* border:2px solid cyan; */
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    grid-template-rows: repeat(4,4fr );
+    grid-gap:5px;
+    
+
+}
+.moves{
+    margin-top:10%;
+    text-align: center;
+}
+.cards{
+    position:relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+    perspective: 1000px;
+    transition:transform 1.5s;
+    transform-style:preserve-3d;
+    border: 2px solid black;
+
+
+}
+.front{
+    position: absolute;
+    height:100%;
+    width:100%;
+
+    backface-visibility: hidden;
+    color: black;
+    text-align: center;
+    line-height: 208px;
+    font-family: Helvetica;
+   
+    
+  }
+  .back{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: #999999;
+    backface-visibility: hidden;
+    
+    color: #fff;
+    text-align: center;
+    line-height: 208px;
+    font-family: Helvetica;
+    transform: rotateY(-180deg);
+
+  }
+  .flipped {
+
+    transform: rotateY(-180deg);
+  }
+
+  .responsive-img{
+    width:100%;
+    height: 100%;
+  }
+/* 
+  .front:hover{
+      display: none;
+  } */
+  .info{
+    
+    padding:0;
+    background: black;
+    text-align: center;
+}
+  .moves{
+   font-family: 'gamefont',Arial, Helvetica, sans-serif;
+    color: purple;
+   font-size:4em;
+  }
+  #jsmoves{
+    
+    color: purple;
+  
+  }
